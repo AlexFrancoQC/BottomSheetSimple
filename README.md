@@ -2,6 +2,25 @@
 BottomSheetSimple solo con xml
 
 
+es un componente que se desliza hacia arriba desde la parte inferior de la pantalla para revelar más contenido. Puede encontrar información más detallada de la hoja inferior en las pautas de Google Material Design .
+
+
+
+implementation 'com.android.support:design:28.0.0'
+
+
+
+
+behavior_peekHeight: define la altura de la parte visible.
+behaviour_hideable: define si la hoja inferior se puede ocultar deslizándola hacia abajo.
+
+
+Vista de contenedor
+Agregue CoordinatorLayout como la vista raíz. Luego, incluya la vista de la hoja inferior como elemento secundario directo de CoordinatorLayout . Los diseños app_bar y activity_bottom_sheet_content son algunas referencias de vista que no están relacionadas con la hoja inferior. Para que pueda reemplazarlos o eliminarlos.
+
+
+
+
 
 
 ![image](https://user-images.githubusercontent.com/64702836/93499815-d7371080-f8e9-11ea-86a4-75641d62831c.png)
